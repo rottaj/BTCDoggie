@@ -1,4 +1,4 @@
-# CryptoNet
+# Bitcoin Analysis
 
 <h2> What to accomplish: </h2>
 <ul> 
