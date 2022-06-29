@@ -2,8 +2,8 @@
 
 <h2> What to accomplish: </h2>
 <ul> 
-  <li> Determine relationships between crypto prices & data inputs.
-  <li> Regular Data Analytics for determining trends.
+  <li> Determine relationships between btc prices & data inputs.
+  <li> Data Analytics to determine trends.
   <li> Implementing a neural network for future predictions.
 </ul>
 
@@ -17,6 +17,6 @@
 
 <h2> Dataset Sources: </h2>
 <ul>
-  <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-Daily.csv">"Bitcoin Daily"</a>
-  <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-2021min.csv">Bitcoin 2021 Minute</a>
+  <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-Daily.csv">Daily Bitcoin Price</a>
+  <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-2021min.csv">2021 Bitcoin Price By Minute</a>
 </ul>
