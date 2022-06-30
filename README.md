@@ -1,6 +1,6 @@
 # Bitcoin Analysis
 
-<h2> What to accomplish: </h2>
+<h2> What I want: </h2>
 <ul> 
   <li> Determine relationships between btc prices & data inputs.
   <li> Data Analytics to determine trends.
@@ -20,3 +20,7 @@
   <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-Daily.csv">Daily Bitcoin Price</a>
   <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-2021min.csv">2021 Bitcoin Price By Minute</a>
 </ul>
+
+<h2> Updated: </h2>
+<p> Twitter doesn't allow full archive searches with standard api key so I'll use
+this: <a href="https://www.kaggle.com/datasets/kaushiksuresh147/bitcoin-tweets">Kaggle Bitcoin Tweets (1Gb).</a> Seems like a lot of hacking... this might get ugly.
