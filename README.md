@@ -15,6 +15,17 @@
   <li> S&P 500 Points ( By minute )
 </ul>
 
+<h2> Twitter Classifier: </h2>
+<p>
+  The classifier for twitter data currently is only based off of follower count.
+  Things I will add:
+  <ul>
+    <li> Retweets
+    <li> Likes
+    <li> Verified Accounts
+  </ul>
+</p>
+
 <h2> Dataset Sources: </h2>
 <ul>
   <li> <a href="https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd?resource=download&select=BTC-Daily.csv">Daily Bitcoin Price</a>

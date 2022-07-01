@@ -21,7 +21,7 @@ if __name__ == "__main__":
   ax1.plot(dfBtcDailyCleaned['date'].iloc[::-1], dfBtcDailyCleaned['high'].iloc[::-1])
   ax1.set_ylabel("Highest Price")
   ax1.set_xlabel("Date")
-  fig.set_title("Bitcoin Price from July 2021 - March 2022")
+  fig.suptitle("Bitcoin Price from July 2021 - March 2022")
 
   ax2.plot(
     pd.to_datetime(dfBtcTweets.date.astype(str),
