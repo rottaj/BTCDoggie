@@ -11,8 +11,7 @@ if __name__ == "__main__":
 
  
   z1 = dfBtcDaily.index[dfBtcDaily.date == "2021-07-01 00:00:00"].astype('int')
-  print(z1) # Returns 243
-  dfBtcDailyCleaned = dfBtcDaily[0: 243]
+  dfBtcDailyCleaned = dfBtcDaily[0: 243] # This is hacky, but works. Idk Index64Int is.
   print(dfBtcDailyCleaned)
 
 
@@ -32,10 +31,9 @@ if __name__ == "__main__":
   ax3.plot(dfBtcDailyCleaned['date'].iloc[::-1], dfBtcDailyCleaned['high'].iloc[::-1], color="blue")
   ax4 = ax3.twinx()
   ax4.plot(
-    pd.to_datetime(dfBtcTweets.date.astype(str),
-    format="%Y-%m-%d %H:%M:%S").sort_values(), 
+    pd.to_datetime(dfBtcTweets.date.astype(str)),
+    #format="%Y-%m-%d %H:%M:%S").sort_values(), 
     dfBtcTweets.user_followers,
     color="red")
-  #print(pd.to_datetime(dfBtcTweets.date.astype(str),format="%Y-%m-%d %H:%M:%S").sort_values())
-  #print(
+  ax4.grid(None)
   plt.show()
