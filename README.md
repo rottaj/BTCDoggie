@@ -10,7 +10,6 @@
 </ul>
 
 <h2> UPDATED: </h2>
-<br>
 <p> The cleaned datasets are hardly enough for a testing set. Maybe I can still learn from this... Or find something else.</p>
 
 <h2> Data we will use: </h2>
