@@ -10,22 +10,24 @@ if __name__ == "__main__":
   #dfTweetsCleaned = pd.to_datetime(dfBtcTweets.date.astype(str), format="%Y-%m-%d %H:%M:%S").sort_values().to_numpy()
 
  
-  z1 = dfBtcDaily.index[dfBtcDaily.date == "2021-07-01 00:00:00"].astype('int')
-  dfBtcDailyCleaned = dfBtcDaily[0: 243] # This is hacky, but works. Idk Index64Int is.
-  print(dfBtcDailyCleaned)
+  z1 = dfBtcDaily.index[dfBtcDaily.date == "2022-01-22 00:00:00"].astype('int')
+  z2 = dfBtcDaily.index[dfBtcDaily.date == "2021-02-05 00:00:00"].astype('int')
+
+  print(z1, z2)
+
+  dfBtcDailyCleaned = dfBtcDaily[38: 389] # This is hacky, but works. Idk Index64Int is.
+
 
   # Starting w/ user followers, will add more later.
 
   
-  print(len(dfBtcTweets['date']))
   dfBtcTweets['user_followers'].fillna(0.0)
   testDf = dfBtcTweets['user_followers'].astype(float).groupby(
     pd.to_datetime(dfBtcTweets['date'], format="%Y-%m-%d %H:%M:%S").dt.to_period('D')).sum() 
   
-  print(testDf)
-  print(testDf.index)
-  print(testDf.values)
-  print(len(testDf))
+  testDf = testDf.iloc[::-1]
+  print("BTC DAILY", dfBtcDailyCleaned['date'], len(dfBtcDailyCleaned))
+  print("BTC TWEETS", testDf, len(testDf))
 
   fig, (ax1, ax2) = plt.subplots(1, 2)
   fig.set_size_inches(10, 10)
